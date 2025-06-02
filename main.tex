@@ -1,23 +1,30 @@
 \documentclass[
 twoside=true,
 openright,
-11pt,
-a5paper
+9pt,
+a5paper,
+final
 ]{scrbook}
-\usepackage[bottom=30mm,inner=20mm,outer=15mm,top=20mm]{geometry}
+\usepackage[bottom=20mm,inner=15mm,outer=10mm,top=10mm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{blindtext}
-\usepackage{libertine}
+\usepackage{lipsum}
+\usepackage{helvet}
 \usepackage[ngerman]{babel}
-\usepackage[]{scrlayer-scrpage}
-\usepackage[bookmarks]{hyperref}
+\usepackage{scrlayer-scrpage}
+\usepackage{hyperref}
+\usepackage{graphicx}
 \usepackage{xifthen}
 \usepackage{titling}
 \usepackage{float}
 \usepackage{eso-pic}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{shadowtext}
+\usepackage{scrhack}
 
-\title{Buch 1}
+\title{Glutenfrei 1}
 \author{Florian Greistorfer}
 \date{}
 
@@ -27,27 +34,56 @@ a5paper
 \let\newdate\@date
 \makeatother
 
+\setlength{\parindent}{0pt}
+
+% Hintergrundbild
+\newcommand\BackgroundPic[1]{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[height=\paperheight,keepaspectratio]{#1}%
+\vfill
+}}}
+
 \newcounter{chapters}
-\newcommand{\Kapitel}[1][]{
+\newcommand{\Kapitel}[2]{
+\clearpage
 \stepcounter{chapters}
 \stepcounter{chapter}
-\ifthenelse{\isempty{#1}}{\chapter*{Kapitel \arabic{chapters}}
-\addcontentsline{toc}{chapter}{Kapitel \arabic{chapters}}
-\markboth{}{}
-}{
-\chapter*{#1}
 \addcontentsline{toc}{chapter}{#1}
 \markboth{}{}
+\AddToShipoutPicture*{\BackgroundPic{#2}}
+\color[HTML]{FFFFFF}
+	\begin{center}
+		\vspace*{8cm}{\shadowtext{\sffamily\fontsize{28}{32}\textbf{#1}}}\\
+	\end{center}
+\clearpage
+\color[HTML]{000000}
 }
-\clearpage}
+
+\newcounter{stepnr}
+\newcommand{\step}{
+\stepcounter{stepnr}
+\paragraph*{\arabic{stepnr}.}
+}
 
 \newenvironment{zutaten}{
-  \textbf{Zutaten}
-  \begin{table}[H]
-
+    \begin{tabular}{rl}
+    \multicolumn{2}{c}{\textbf{Zutaten}}\\
 }{
-  \end{table}
+    \end{tabular}
 }
+
+\newenvironment{steps}{\setcounter{stepnr}{0}}{}
+
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand*{\sectionformat}{\thesection\enskip}
+\renewcommand*{\subsectionformat}{\thesubsection\enskip}
+\setcounter{tocdepth}{2}
+
+\let\stdsection\section
+\renewcommand\section{\clearpage\stdsection}
 
 \begin{document}
 \frontmatter
@@ -59,6 +95,7 @@ a5paper
 
 \mainmatter
 \ofoot[\pagemark]{\pagemark}
+\shadowcolor{black}
 
 \include{content}
 
