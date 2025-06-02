@@ -1,0 +1,65 @@
+\documentclass[
+twoside=true,
+openright,
+11pt,
+a5paper
+]{scrbook}
+\usepackage[bottom=30mm,inner=20mm,outer=15mm,top=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage{libertine}
+\usepackage[ngerman]{babel}
+\usepackage[]{scrlayer-scrpage}
+\usepackage[bookmarks]{hyperref}
+\usepackage{xifthen}
+\usepackage{titling}
+\usepackage{float}
+\usepackage{eso-pic}
+
+\title{Buch 1}
+\author{Florian Greistorfer}
+\date{}
+
+\makeatletter
+\let\newtitle\@title
+\let\newauthor\@author
+\let\newdate\@date
+\makeatother
+
+\newcounter{chapters}
+\newcommand{\Kapitel}[1][]{
+\stepcounter{chapters}
+\stepcounter{chapter}
+\ifthenelse{\isempty{#1}}{\chapter*{Kapitel \arabic{chapters}}
+\addcontentsline{toc}{chapter}{Kapitel \arabic{chapters}}
+\markboth{}{}
+}{
+\chapter*{#1}
+\addcontentsline{toc}{chapter}{#1}
+\markboth{}{}
+}
+\clearpage}
+
+\newenvironment{zutaten}{
+  \textbf{Zutaten}
+  \begin{table}[H]
+
+}{
+  \end{table}
+}
+
+\begin{document}
+\frontmatter
+\maketitle
+\clearpairofpagestyles
+\include{copyright}
+\include{dedication}
+\tableofcontents
+
+\mainmatter
+\ofoot[\pagemark]{\pagemark}
+
+\include{content}
+
+\end{document}
