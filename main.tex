@@ -68,6 +68,26 @@ final
 \paragraph*{\arabic{stepnr}.}
 }
 
+% Switch implementation
+\newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
+\newcommand{\case}[2]{#1 #2} % Dummy, so \renewcommand has something to overwrite...
+\newenvironment{switch}[1]{\renewcommand{\case}{\ifequals{#1}}}{}
+
+\newcommand{\ofen}[3]{
+    \begin{figure}[H]
+        \begin{switch}{#1}
+            \case{ou}{\includegraphics[width=2em]{icon/oberunter}}
+            \case{hl}{\includegraphics[width=2em]{icon/heissluft}}
+            \case{ul}{\includegraphics[width=2em]{icon/umluft}}
+            \case{o}{\includegraphics[width=2em]{icon/ober}}
+            \case{u}{\includegraphics[width=2em]{icon/unter}}
+            \case{g}{\includegraphics[width=2em]{icon/grill}}
+        \end{switch}
+    \end{figure}
+            \vspace*{-7.5ex}
+            \hspace{4em}\textbf{#2°C\hspace{2em}#3}
+}
+
 \newenvironment{zutaten}{
     \begin{tabular}{rl}
     \multicolumn{2}{c}{\textbf{Zutaten}}\\

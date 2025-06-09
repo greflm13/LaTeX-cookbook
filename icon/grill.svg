@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="225mm"
+   height="225mm"
+   viewBox="0 0 225 225"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="grill.svg"
+   inkscape:export-filename="grill.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.90289624"
+     inkscape:cx="111.86224"
+     inkscape:cy="336.69428"
+     inkscape:window-width="2560"
+     inkscape:window-height="1416"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#ffffff00" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(7.5,7.5)">
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect1"
+       width="210"
+       height="210"
+       x="0"
+       y="0"
+       rx="21.319307"
+       ry="21.319307" />
+    <path
+       id="path2-6"
+       style="fill:none;stroke:#000000;stroke-width:14.3005;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 143.92488,31.716096 19.46244,19.462447 19.46245,-19.462447 m -77.84977,0 19.46245,19.462447 19.46243,-19.462447 m -77.849767,0 L 85.537557,51.178543 105,31.716096 m -77.849775,10e-6 19.462445,19.462437 19.462443,-19.462447" />
+  </g>
+</svg>

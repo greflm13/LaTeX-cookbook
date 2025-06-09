@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="225mm"
+   height="225mm"
+   viewBox="0 0 225 225"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="heissluft.svg"
+   inkscape:export-filename="heissluft.pdf"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.63844405"
+     inkscape:cx="195.00534"
+     inkscape:cy="422.90315"
+     inkscape:window-width="2560"
+     inkscape:window-height="1416"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(7.5,7.5)">
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:15;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect1"
+       width="210"
+       height="210"
+       x="0"
+       y="0"
+       rx="21.319307"
+       ry="21.319307" />
+    <path
+       id="path2"
+       style="fill:#000000;stroke:#000000;stroke-width:5.03127;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 101.92854,61.095659 c -2.513281,-0.1173 -12.984357,0.13734 -19.671022,11.718982 -7.641902,13.236164 20.226992,28.020009 20.226992,28.020009 V 61.136825 c 0,0 -0.19693,-0.02441 -0.55597,-0.04116 z m 30.26898,19.853891 c -11.69685,0.214745 -23.01546,21.55168 -23.01546,21.55168 h 39.69781 c 0,0 1.55834,-12.585083 -11.67782,-20.226989 -1.65451,-0.955238 -3.33355,-1.355368 -5.00453,-1.324691 z M 61.120102,107.5322 c 0,0 -1.557909,12.58508 11.678251,20.22699 13.236159,7.6419 28.019557,-20.22699 28.019557,-20.22699 z m 46.395368,1.66659 v 39.69782 c 0,0 12.58508,1.55791 20.22698,-11.67825 7.64191,-13.23617 -20.22698,-28.01957 -20.22698,-28.01957 z" />
+    <circle
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:13.6039;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path3"
+       cx="104.99999"
+       cy="104.99999"
+       r="62.073616" />
+  </g>
+</svg>
