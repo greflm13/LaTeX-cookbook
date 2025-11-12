@@ -1,11 +1,16 @@
 \documentclass[
 twoside=true,
 openright,
+<<<<<<< Updated upstream
 fontsize=9pt,
 a5paper,
+=======
+10pt,
+a4paper,
+>>>>>>> Stashed changes
 final
 ]{scrbook}
-\usepackage[bottom=20mm,inner=15mm,outer=10mm,top=10mm]{geometry}
+\usepackage[bottom=30mm,inner=25mm,outer=20mm,top=20mm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
@@ -62,12 +67,6 @@ final
 \color[HTML]{000000}
 }
 
-\newcounter{stepnr}
-\newcommand{\step}{
-\stepcounter{stepnr}
-\paragraph*{\arabic{stepnr}.}
-}
-
 % Switch implementation
 \newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
 \newcommand{\case}[2]{#1 #2} % Dummy, so \renewcommand has something to overwrite...
@@ -84,7 +83,7 @@ final
             \case{g}{\includegraphics[width=2em]{icon/grill}}
         \end{switch}
     \end{figure}
-            \vspace*{-7.5ex}
+            \vspace*{-7ex}
             \hspace{4em}\textbf{#2°C\hspace{2em}#3}
 }
 
@@ -95,11 +94,10 @@ final
     \end{tabular}
 }
 
-\newenvironment{steps}{\setcounter{stepnr}{0}}{}
-
 \renewcommand{\thesection}{\arabic{section}.}
 \renewcommand*{\sectionformat}{\thesection\enskip}
 \renewcommand*{\subsectionformat}{\thesubsection\enskip}
+\renewcommand*{\labelenumi}{\textbf{\arabic{enumi}.}}
 \setcounter{tocdepth}{2}
 
 \let\stdsection\section
