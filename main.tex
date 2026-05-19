@@ -81,9 +81,9 @@ final
             \hspace{4em}\textbf{#2°C\hspace{2em}#3}
 }
 
-\newenvironment{zutaten}{
-    \begin{tabular}{rl}
-    \multicolumn{2}{c}{\textbf{Zutaten}}\\
+\newenvironment{zutaten}[1][]{
+    \begin{tabular}{r@{\,}l l}
+    \multicolumn{3}{c}{{\bfseries Zutaten\ifx#1\empty\else\ {\mdseries\small\ #1}\fi}} \\
 }{
     \end{tabular}
 }
